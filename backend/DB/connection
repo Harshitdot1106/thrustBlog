@@ -1,0 +1,12 @@
+import mongoose from "mongoose"
+const connectDB=async ()=>{
+  try{
+    await mongoose.connect('mongodb+srv://anandharshit2005:harshit@cluster0.acawkbo.mongodb.net')
+  console.log('connected to Database')
+  }
+
+  catch{
+    (err)=>console.log('error')
+  }
+}
+export default connectDB;
